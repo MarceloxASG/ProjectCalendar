@@ -12,9 +12,6 @@ function App() {
   //lógica de cambio de tema
   const [theme, setTheme] = useState("light");
   const themeStyle = theme === "light" ? Light : Dark;
-  const CambiarTheme = () => {
-    setTheme ((theme) => (theme === "light" ? "dark" : "light"));
-  }
 
   // Toggle sidebar
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -38,6 +35,7 @@ function App() {
   )
 }
 
+//Estilos del Container
 const Container = styled.div`
   display: grid;
   grid-template-columns: 90px auto;
